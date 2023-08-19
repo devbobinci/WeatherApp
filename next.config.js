@@ -2,7 +2,12 @@
 const nextConfig = {
   experimental: {
     appDir: true,
+    serverComponentsExternalPackages: ["@tremor/react"],
   },
-}
 
-module.exports = nextConfig
+  images: {
+    domains: ["www.weatherbit.io"],
+  },
+};
+
+module.exports = nextConfig;
