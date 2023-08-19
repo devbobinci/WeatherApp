@@ -91,7 +91,7 @@ export default function InformationPanel({ city, lat, long, results }: Props) {
         </div>
 
         <div className="flex items-center space-x-2 px-4 py-3 border border-[#437843] rounded-md bg-[#0f301d]">
-          <SunIcon className="h-10 w-10 text-gray-400" />
+          <MoonIcon className="h-10 w-10 text-gray-400" />
 
           <div className="flex-1 flex justify-between items-center">
             <p className="font-extralight">Sunset</p>

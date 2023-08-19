@@ -39,20 +39,6 @@ export default async function WeatherPage({
 
   const results: Root = await data.myQuery;
 
-  //! Nie dziala gpt, bo zablokowali konto -__-
-
-  // const dataToSend = cleanData(results, city);
-
-  // const res = await fetch(`${getBasePath()}/api/getWeatherSummary`, {
-  //   method: "POST",
-  //   headers: { "Content-Type": "application/json" },
-  //   body: JSON.stringify({ weatherData: dataToSend }),
-  // });
-
-  // const GPTdata = await res.json();
-
-  console.log();
-
   return (
     <div className="flex flex-col min-h-screen md:flex-row">
       <InformationPanel lat={lat} long={long} results={results} city={city} />
